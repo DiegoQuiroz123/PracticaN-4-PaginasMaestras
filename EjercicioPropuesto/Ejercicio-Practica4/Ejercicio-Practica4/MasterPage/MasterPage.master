@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Ejercicio_Practica4.MasterPage.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns =" http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>DeveloperSoft Inc.</title>
+ <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 250px;
+        }
+        .nuevoEstilo1 {
+            vertical-align: top;
+            background-color: #006699;
+            width: 200px;
+            height: 350px;
+        }
+        .auto-style3 {
+            width: 432px;
+            height: 158px;
+            margin-right: 0px;
+        }
+        .auto-style4 {
+            vertical-align: top;
+            background-color: #006699;
+            width: 200px;
+            height: 198px;
+        }
+        .auto-style5 {
+            width: 250px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+
+ <form id="form1" runat="server">
+ <div>
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     <table class="auto-style1">
+         <tr>
+             <td class="auto-style4" colspan="2">VENTA DE ARTEFACTOS ELECTRODOMESTICOS<br />
+                 <img alt="" class="auto-style3" src="file:///C:/Users/diego/source/repos/Ejercicio-Practica4/Ejercicio-Practica4/Imagenes/1200px-ripley_logo-svg.png" /></td>
+         </tr>
+         <tr>
+             <td class="auto-style5">MENU:
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                     <asp:DropDownList ID="articulos" runat="server" DataSourceID="articulos" Height="16px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged1" Width="171px">
+                         <asp:ListItem Value="15">Refrigeradora</asp:ListItem>
+                         <asp:ListItem Value="20">Microondas</asp:ListItem>
+                         <asp:ListItem Value="25">Licuadora</asp:ListItem>
+                     </asp:DropDownList>
+                 </asp:ContentPlaceHolder>
+                 <asp:Button ID="boton" runat="server" OnClick="Button1_Click" Text="Seleccionar" />
+             </td>
+             <td>&nbsp;</td>
+         </tr>
+         <tr>
+             <td class="auto-style2">Ripley ºc</td>
+             <td>&nbsp;</td>
+         </tr>
+     </table>
+ </asp:ContentPlaceHolder>
+ </div>
+ </form>
+</body>
+</html>

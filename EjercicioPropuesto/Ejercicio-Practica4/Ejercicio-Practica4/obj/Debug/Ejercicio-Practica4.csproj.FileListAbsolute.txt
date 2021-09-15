@@ -1,0 +1,2 @@
+C:\Users\diego\source\repos\Ejercicio-Practica4\Ejercicio-Practica4\obj\Debug\Ejercicio-Practica4.csproj.AssemblyReference.cache
+C:\Users\diego\source\repos\Ejercicio-Practica4\Ejercicio-Practica4\obj\Debug\Ejercicio-Practica4.csproj.CoreCompileInputs.cache
